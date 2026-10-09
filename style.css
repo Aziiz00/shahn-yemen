@@ -1,0 +1,18 @@
+:root{--green:#0b5b49;--green2:#137b62;--ink:#172c27;--muted:#657771;--bg:#f4f8f6;--line:#dce8e2;--white:#fff}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,"Segoe UI",Tahoma,Arial,sans-serif;line-height:1.6}
+.top{background:var(--green);color:white;padding:18px 18px 22px;display:flex;align-items:center;gap:12px;box-shadow:0 4px 16px #0b5b4922}
+.brand-mark{width:48px;height:48px;border-radius:15px;background:#ffffff20;border:1px solid #ffffff45;display:grid;place-items:center;font-size:25px;font-weight:800}
+h1,h2,p{margin-top:0}.top h1{font-size:21px;margin:0}.top p{font-size:12px;color:#d9eee7;margin:2px 0 0}.pill{margin-right:auto;font-size:10px;background:#ffffff20;border-radius:20px;padding:5px 8px;white-space:nowrap}
+main{width:min(100% - 28px,600px);margin:18px auto 30px}.hero{position:relative;overflow:hidden;background:linear-gradient(135deg,#0b5b49,#16866a);color:white;border-radius:22px;padding:24px 22px;margin-bottom:14px}
+.hero h2{font-size:26px;margin:0 0 6px}.hero p{color:#e1f4ec;margin-bottom:0}.hero .eyebrow{font-size:12px;color:#b8e5d4;margin-bottom:5px}.hero-icon{position:absolute;left:18px;bottom:12px;font-size:76px;opacity:.13;font-weight:900}
+.panel{background:white;border:1px solid var(--line);border-radius:20px;padding:20px;margin:14px 0;box-shadow:0 5px 18px #173e2e08}.panel h2{font-size:19px;margin-bottom:16px}
+label{display:block;font-size:14px;font-weight:700;margin:13px 0 6px}
+input,select,textarea{display:block;width:100%;font:inherit;color:var(--ink);background:#fbfdfc;border:1px solid #d4e2db;border-radius:12px;padding:12px 13px;outline:none}
+input:focus,select:focus,textarea:focus{border-color:var(--green2);box-shadow:0 0 0 3px #137b6218}
+.primary{width:100%;border:0;border-radius:13px;padding:14px;background:var(--green);color:white;font:inherit;font-weight:800;margin-top:18px;cursor:pointer}
+.primary:active{transform:scale(.99)}.fine{font-size:11px;color:var(--muted);margin:10px 0 0}.feedback{font-size:13px;color:var(--green);margin:8px 0 0}
+.ad-slot{border:1px dashed #a9c5b8;border-radius:15px;background:#edf5f1;text-align:center;padding:14px;color:#4c6c60;margin:14px 0;display:flex;flex-direction:column;gap:2px}.ad-slot span{font-weight:800;font-size:13px}.ad-slot small{font-size:10px}
+.steps{display:grid;gap:12px}.steps div{display:flex;align-items:center;gap:11px}.steps b{display:grid;place-items:center;background:#e3f3ec;color:var(--green);width:34px;height:34px;border-radius:11px;flex-shrink:0}
+.notice{background:#fff8e7;border:1px solid #f1dfad;color:#6a5523;padding:15px;border-radius:15px;font-size:13px}.notice p{margin:5px 0 0}
+footer{text-align:center;padding:20px 14px 30px;color:var(--muted);font-size:11px}
+@media(min-width:500px){.top{padding-inline:max(18px,calc((100% - 600px)/2))}}

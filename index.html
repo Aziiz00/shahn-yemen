@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#0b5b49">
+<meta name="description" content="واجهة طلب شحن الرصيد وباقات الإنترنت في اليمن">
+<link rel="manifest" href="manifest.json">
+<link rel="stylesheet" href="style.css">
+<title>شحن اليمن</title>
+</head>
+<body>
+<header class="top">
+  <div class="brand-mark">ش</div>
+  <div><h1>شحن اليمن</h1><p>الرصيد والباقات في مكان واحد</p></div>
+  <span class="pill">نسخة تجريبية</span>
+</header>
+
+<main>
+  <section class="hero">
+    <p class="eyebrow">أهلًا بك</p>
+    <h2>اطلب شحنتك بسهولة</h2>
+    <p>اختر الشبكة والخدمة وأرسل طلبك عبر واتساب.</p>
+    <div class="hero-icon">↗</div>
+  </section>
+
+  <section class="ad-slot" aria-label="مساحة إعلانية">
+    <span>مساحة إعلانية</span>
+    <small>تُفعّل بعد إنشاء حساب إعلاني والموافقة عليه</small>
+  </section>
+
+  <section class="panel">
+    <h2>طلب شحن جديد</h2>
+    <form id="orderForm">
+      <label for="network">شركة الاتصالات</label>
+      <select id="network" required>
+        <option value="">اختر الشبكة</option>
+        <option>يمن موبايل</option>
+        <option>YOU</option>
+        <option>سبأفون</option>
+        <option>واي</option>
+        <option>شبكة أخرى</option>
+      </select>
+
+      <label for="service">نوع الخدمة</label>
+      <select id="service" required>
+        <option value="شحن رصيد">شحن رصيد</option>
+        <option value="باقة إنترنت">باقة إنترنت</option>
+        <option value="باقة اتصال">باقة اتصال</option>
+      </select>
+
+      <label for="phone">رقم الهاتف المراد شحنه</label>
+      <input id="phone" inputmode="tel" autocomplete="tel" placeholder="أدخل رقم الهاتف" required minlength="7">
+
+      <label for="amount">مبلغ الشحن (ريال يمني)</label>
+      <input id="amount" type="number" inputmode="numeric" min="1" step="1" placeholder="مثال: 1000" required>
+
+      <label for="notes">تفاصيل إضافية (اختياري)</label>
+      <textarea id="notes" rows="2" placeholder="اسم الباقة أو أي ملاحظات"></textarea>
+
+      <button type="submit" class="primary">إرسال الطلب عبر واتساب</button>
+      <p class="fine">لن يتم تنفيذ الشحن تلقائيًا في هذه النسخة. تأكد من السعر وطريقة الدفع مع البائع قبل التحويل.</p>
+      <p id="feedback" role="status" class="feedback"></p>
+    </form>
+  </section>
+
+  <section class="panel">
+    <h2>كيف يعمل الطلب؟</h2>
+    <div class="steps">
+      <div><b>١</b><span>اختر الشبكة والخدمة</span></div>
+      <div><b>٢</b><span>أدخل رقم الهاتف والمبلغ</span></div>
+      <div><b>٣</b><span>أرسل الطلب وتابع مع خدمة العملاء</span></div>
+    </div>
+  </section>
+
+  <section class="notice">
+    <strong>ملاحظة مهمة</strong>
+    <p>هذا إصدار أولي لواجهة الطلبات. لا يحتوي على ربط مباشر بشركات الاتصالات أو بوابة دفع أو نظام عمولات. لا تدّعِ أن الشحن فوري حتى يتم ربط مزوّد معتمد واختباره.</p>
+  </section>
+</main>
+
+<footer>
+  <div>© <span id="year"></span> شحن اليمن</div>
+  <div>خدمة العملاء: يُضاف رقم واتساب المخصص قبل النشر</div>
+</footer>
+<script src="app.js"></script>
+</body>
+</html>

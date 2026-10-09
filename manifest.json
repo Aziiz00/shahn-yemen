@@ -1,0 +1,12 @@
+{
+  "name": "شحن اليمن",
+  "short_name": "شحن اليمن",
+  "description": "واجهة طلب شحن الرصيد وباقات الإنترنت في اليمن",
+  "lang": "ar",
+  "dir": "rtl",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#f4f8f6",
+  "theme_color": "#0b5b49",
+  "icons": []
+}
